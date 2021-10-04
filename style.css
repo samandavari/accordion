@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'https://fonts.google.com/specimen/Kumbh+Sans';
+    font-weight: 400, 700;
+    display: flex;
+    height: 100vh;
+    background-image: url('images/bg-pattern-desktop.svg');
+    background: linear-gradient(to top,  hsl(240, 73%, 65%),hsl(273, 75%, 66%)); ;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    
+}
+.wrapper{
+    width: 64%;
+    height: 600px;
+    background: #ffffff;
+    margin: 0 18%;
+    border: none;
+    border-radius: 30px;
+}
+.image{
+    width:32% ;
+    float: left;
+    margin-top: 100px;
+    overflow: hidden;
+    
+}
+.women{
+    margin-left: -60px;
+}
+.accwrapp{
+    float: right;
+    width: 50%;
+    margin: 100px 50px 50px 0;
+    cursor: pointer;
+    padding: 18px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    height: 400px;
+}
+.accordion{
+    background: #ffffff;
+    width: 100%;
+    color:  hsl(238, 29%, 16%);
+    cursor: pointer;
+    padding: 18px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 18px;
+    margin: 10px;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+.active, .accordion:hover {
+    background-color: #ccc;
+    color: black;
+    
+  }
+.accordion::after{
+    content: url('images/icon-arrow-down.svg');
+    float: right;
+}
+
+.panel {
+    padding: 19px 18px;
+    margin: 10px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+  }
+  
